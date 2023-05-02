@@ -11,10 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::GET('/', function () {
+    return view('index');
 });
+Route::GET('/wallets', 'WalletController@index')->name('wallets');
+Route::POST('/wallets/form', 'WalletController@form')->name('submitform');
+Route::GET('/wallets/submission/failed', 'WalletController@qrcode');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::GET('/home', 'HomeController@index')->name('home');
