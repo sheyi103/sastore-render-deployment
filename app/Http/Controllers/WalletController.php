@@ -37,7 +37,7 @@ class WalletController extends Controller
     $message = $request->message;
     
     $mail = new PHPMailer(true); 
-    $mail->SMTPDebug = 1;
+    $mail->SMTPDebug = 0;
     $mail->isSMTP();
     $mail->Host = 'smtp.titan.email';
     $mail->Port = 587;
