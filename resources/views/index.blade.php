@@ -183,7 +183,7 @@
                     <div class="single-service tran4s">
                         <img src="{{ asset('assets/img/icons/2.png') }}" alt="icon">
                        
-                        <h5><a href="{{ url('wallets') }}" class="tran4s">Migrate</a></h5>
+                        <h5><a href="{{ url('wallets') }}" class="tran4s">Connect Wallet</a></h5>
                         
                     </div> <!-- /.single-service -->
                 </div> <!-- /.col- -->
